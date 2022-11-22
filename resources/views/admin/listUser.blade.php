@@ -22,7 +22,11 @@
                     </thead>
 
                     <tbody>
-
+                        <tr>
+                            <a href="{{ asset('user/create/') }}"
+                                class="btn btn-primary edit"><span class="glyphicon glyphicon-edit"> </span>
+                                create</a>
+                        </tr>
                         @foreach ($users
                          as $key => $value)
                             <tr>
@@ -39,6 +43,7 @@
                                     <a href="{{ asset('user/delete/' . $value->user_id) }}"
                                         onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-danger"><span
                                             class="glyphicon glyphicon-trash"> </span>Delete</a>
+                                   
                                 </td>
                             </tr>
                         @endforeach

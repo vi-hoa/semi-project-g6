@@ -1,3 +1,5 @@
+@extends('admin.layout.index') 
+@section('content')
 <form role ="form" action="" method="post">
 
     @csrf
@@ -19,3 +21,4 @@
     
     </form>
 
+    @endsection
