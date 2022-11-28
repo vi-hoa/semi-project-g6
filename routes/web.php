@@ -39,4 +39,6 @@ Route::prefix('product')->group(function(){
         Route::post('update/{id}',[ProductController::class,'edit'])->name('admin.product.update');
         Route::get('show{id}',[ProductController::class,'show'])->name('admin.product.show');
         Route::post('store',[ProductController::class,'store'])->name('admin.product.store');
+        Route::get('signup',[LoginController::class,'signup'])->name('admin.product.signup');
+        Route::get('login',[LoginController::class,'login'])->name('admin.product.login');
 });

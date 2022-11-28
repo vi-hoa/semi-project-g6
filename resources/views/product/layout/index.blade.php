@@ -11,3 +11,11 @@
 @INCLUDE('product.layout.footer')
 
 @INCLUDE('product.layout.js')
+
+
+
+
+
+@INCLUDE('product.login')
+
+@INCLUDE('product.signup')
