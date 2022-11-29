@@ -44,3 +44,8 @@ Route::group(['prefix' =>'category'], function(){
         Route::post('edit/{id}',[UsersController::class,'postEditCate']);
         Route::get('delete/{id}',[UsersController::class,'delete']);
     });
+
+    Route::get('cart', [HomeController::class, 'cart']);
+    Route::get('add-to-cart/{id}', [HomeController::class, 'addToCart']);
+    Route::post('/update-cart/{id}', [HomeController::class, 'update'])->name('update-cart');
+    Route::delete('remove-from-cartf', [HomeController::class, 'remove']);
