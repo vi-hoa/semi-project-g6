@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb">
+    {{-- <section class="ftco-section ftco-no-pb">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-4 ">
@@ -103,7 +103,9 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
+
+    
 
     <section class="ftco-section">
         <div class="container">
@@ -265,7 +267,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <a href="product.html" class="btn btn-primary d-block">View All Products <span class="fa fa-long-arrow-right"></span></a>
+                    <a href="product.php" class="btn btn-primary d-block">View All Products <span class="fa fa-long-arrow-right"></span></a>
                 </div>
             </div>
         </div>
@@ -377,7 +379,7 @@
     <div class="row d-flex">
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
-              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
+              <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_1.jpg');">
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">
@@ -392,7 +394,7 @@
       </div>
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
-              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
+              <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_2.jpg');">
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">
@@ -407,7 +409,7 @@
       </div>
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
-              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
+              <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_3.jpg');">
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">
@@ -422,7 +424,7 @@
       </div>
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
-              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_4.jpg');">
+              <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_4.jpg');">
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">

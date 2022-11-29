@@ -1,5 +1,4 @@
 <body>
-
     <div class="wrap">
           <div class="container">
               <div class="row">
@@ -19,7 +18,7 @@
                       </p>
               </div>
               <div class="reg">
-                  <p class="mb-0"><a href="#" class="mr-2">Sign Up</a> <a href="#">Log In</a></p>
+                  <p class="mb-0"><a href="signup.php" class="mr-2">Sign Up</a> <a href="login.php">Log In</a></p>
               </div>
                   </div>
               </div>
