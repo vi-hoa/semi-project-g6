@@ -48,7 +48,7 @@ class CategoryController extends Controller
         $category->category_name = $request->category_name;
         $category->description = $request->description;
         $category->save();
-        return redirect()->route('admin.category.index');
+        return redirect()->route('admin.user.index');
     }
     public function delete($id)
     {
