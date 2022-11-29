@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,11 +46,11 @@ Route::group(['prefix' =>'category'], function(){
         Route::post('edit/{id}',[UsersController::class,'postEditCate']);
         Route::get('delete/{id}',[UsersController::class,'delete']);
     });
-
-        Route::get('/product/index',[ProductController::class,'index'])->name('products.index');
-        Route::get('/product/create/',[ProductController::class,'create'])->name('products.create');
-        Route::get('/product/delete/{id}',[ProductController::class,'destroy'])->name('products.destroy');
-        Route::get('/product/edit/{id}',[ProductController::class,'edit'])->name('products.edit');
-        Route::post('/product/update/{id}',[ProductController::class,'update'])->name('products.update');
-        Route::get('/product/show/{id}',[ProductController::class,'show'])->name('products.show');
-        Route::post('/product/store',[ProductController::class,'store'])->name('product.store');
+    
+    Route::get('/product/index',[ProductController::class,'index'])->name('products.index');
+    Route::get('/product/create/',[ProductController::class,'create'])->name('products.create');
+    Route::get('/product/delete/{id}',[ProductController::class,'destroy'])->name('products.destroy');
+    Route::get('/product/edit/{id}',[ProductController::class,'edit'])->name('products.edit');
+    Route::post('/product/update/{id}',[ProductController::class,'update'])->name('products.update');
+    Route::get('/product/show/{id}',[ProductController::class,'show'])->name('products.show');
+    Route::post('/product/store',[ProductController::class,'store'])->name('product.store');
