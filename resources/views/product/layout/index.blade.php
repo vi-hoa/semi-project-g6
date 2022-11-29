@@ -1,14 +1,21 @@
-@INCLUDE('customer.layout.head')
+@INCLUDE('product.layout.head')
+@INCLUDE('product.layout.navbar')
+@INCLUDE('product.layout.banner')
 
-@INCLUDE('customer.layout.banner')
 
 
-@INCLUDE('customer.layout.navbar')
-
-@INCLUDE('customer.layout.content')
+@INCLUDE('product.layout.content')
 
 @yield('content')
 
-@INCLUDE('customer.layout.footer')
+@INCLUDE('product.layout.footer')
 
-@INCLUDE('customer.layout.js')
+@INCLUDE('product.layout.js')
+
+
+
+
+
+@INCLUDE('product.login')
+
+@INCLUDE('product.signup')

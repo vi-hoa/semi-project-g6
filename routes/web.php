@@ -5,6 +5,8 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductController;
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,3 +56,22 @@ Route::group(['prefix' =>'category'], function(){
     Route::post('/product/update/{id}',[ProductController::class,'update'])->name('products.update');
     Route::get('/product/show/{id}',[ProductController::class,'show'])->name('products.show');
     Route::post('/product/store',[ProductController::class,'store'])->name('product.store');
+        Route::get('index',[ProductController::class,'index'])->name('admin.product.index');
+        Route::get('create',[ProductController::class,'create'])->name('admin.product.create');
+        Route::get('delete/{id}',[ProductController::class,'delete'])->name('admin.product.delete');
+        Route::get('edit/{id}',[ProductController::class,'edit'])->name('admin.product.edit');
+        Route::post('update/{id}',[ProductController::class,'edit'])->name('admin.product.update');
+        Route::get('show{id}',[ProductController::class,'show'])->name('admin.product.show');
+        Route::post('store',[ProductController::class,'store'])->name('admin.product.store');
+        
+});
+Route::prefix('user')->group(function(){
+
+        Route::get('signup',[RegisterController::class,'getSignup'])->name('product.signup');
+        Route::post('signup',[RegisterController::class,'postSignup'])->name('product.signup');
+        Route::get('login',[LoginController::class,'getLogin'])->name('product.login');
+        Route::post('login',[LoginController::class,'postLogin'])->name('product.login');
+});
+Route::group(['middleware' => ['auth']],function(){
+    Route::get('logout',[LogoutController::class,'Logout']);
+});
