@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductController;
-
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,6 +40,15 @@ Route::prefix('product')->group(function(){
         Route::post('update/{id}',[ProductController::class,'edit'])->name('admin.product.update');
         Route::get('show{id}',[ProductController::class,'show'])->name('admin.product.show');
         Route::post('store',[ProductController::class,'store'])->name('admin.product.store');
-        Route::get('signup',[LoginController::class,'signup'])->name('admin.product.signup');
-        Route::get('login',[LoginController::class,'login'])->name('admin.product.login');
+        
+});
+Route::prefix('user')->group(function(){
+
+        Route::get('signup',[RegisterController::class,'getSignup'])->name('product.signup');
+        Route::post('signup',[RegisterController::class,'postSignup'])->name('product.signup');
+        Route::get('login',[LoginController::class,'getLogin'])->name('product.login');
+        Route::post('login',[LoginController::class,'postLogin'])->name('product.login');
+});
+Route::group(['middleware' => ['auth']],function(){
+    Route::get('logout',[LogoutController::class,'Logout']);
 });

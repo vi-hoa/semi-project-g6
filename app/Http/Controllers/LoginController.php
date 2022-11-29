@@ -8,20 +8,25 @@ class LoginController extends Controller
 {
     public function getLogin()
     {
-        return view('login');
+        return view('auth.login');
     }
     public function postLogin(Request $request)
     {
-        $arr = ['username' =>$request->username, 'password' =>$request->password];
-        if(Auth::attempt($arr)){
-            dd('Successfully');
-        }
-        else{
-            dd('Failed');
-        }
+        $credentials = $request->getCredentials();
+
+        if(!Auth::validate($credentials)):
+            return redirect()->to('login')
+                ->withErrors(trans('auth.failed'));
+        endif;
+
+        $user = Auth::getProvider()->retrieveByCredentials($credentials);
+
+        Auth::login($user);
+
+        return $this->authenticated($request, $user);
     }
-    public function getLogout(){
-        Auth::logout();
-        return redirect()->intended('login');
+    protected function authenticated(Request $request, $user) 
+    {
+        return redirect()->intended();
     }
 }
