@@ -18,6 +18,7 @@ class Product extends Model
     protected $filable = [
         'product_name','product_price','img', 'product_description','category_id'
     ];
+
     protected $primaryKey ="product_id";
     
     protected $table = "product";
@@ -28,4 +29,5 @@ class Product extends Model
     protected $fillable =[
         'product_name','product_description','product_price','image','category_id'];
     public $timestamps = false;
+
 }

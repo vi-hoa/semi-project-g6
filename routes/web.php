@@ -5,6 +5,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductController;
 
+
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
@@ -56,6 +57,7 @@ Route::group(['prefix' =>'category'], function(){
     Route::post('/product/update/{id}',[ProductController::class,'update'])->name('products.update');
     Route::get('/product/show/{id}',[ProductController::class,'show'])->name('products.show');
     Route::post('/product/store',[ProductController::class,'store'])->name('product.store');
+
         Route::get('index',[ProductController::class,'index'])->name('admin.product.index');
         Route::get('create',[ProductController::class,'create'])->name('admin.product.create');
         Route::get('delete/{id}',[ProductController::class,'delete'])->name('admin.product.delete');

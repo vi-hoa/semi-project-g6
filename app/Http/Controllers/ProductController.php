@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Http\Controllers;
+
 
 namespace App\Http\Controllers;
 
@@ -119,6 +121,7 @@ class ProductController extends Controller
                 ->with('Error', 'Product not update');
             }         
         }       
+
 use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
@@ -204,12 +207,15 @@ class ProductController extends Controller
             ->with('Error', 'Product not update');
             }
         }
+
     }
     public function destroy($id)
     {
         $product = Product::find($id);
         $image_path = "/image/product/.$product->image";  // Value is not URL but directory file path
+
         $image_path = "/image/product/.$product->image"; // Value is not URL but directory file path
+
         if(File::exists($image_path)) {
             File::delete($image_path);
         }
@@ -218,7 +224,9 @@ class ProductController extends Controller
             ->with('success', 'Product deleted successfully');
     }
 }
+
         ->with('success', 'Product deleted successfully');
     }
 }
+
 
