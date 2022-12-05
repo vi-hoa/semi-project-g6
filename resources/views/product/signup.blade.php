@@ -1,10 +1,12 @@
+@extends('auth')
+@section('content')
 <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="normal__breadcrumb__text">
                     <h2>Sign up</h2>
-                    <p>Welcome to the official Anime blog.</p>
+                    <p>Welcome to the our store.</p>
                 </div>
             </div>
         </div>
@@ -21,12 +23,21 @@
                     <h3>Register</h3>
                     <form action="#">
                         <div class="input__item">
+                            <input type="text" placeholder="Username">
+                            @if($errors->has('username'))
+                            <span class="icon_mail">{{$errors->first('username')}}</span>
+                            @endif
+                        <div class="input__item">
                             <input type="text" placeholder="Email address">
-                            <span class="icon_mail"></span>
+                            @if($errors->has('email'))
+                            <span class="icon_mail">{{$errors->first('email')}}</span>
+                            @endif
                         </div>
                         <div class="input__item">
                             <input type="text" placeholder="Password">
-                            <span class="icon_lock"></span>
+                            @if($errors->has('password'))
+                            <span class="icon_lock">{{$errors->first('password')}}</span>
+                            @endif
                         </div>
                         <button type="submit" class="site-btn">Register Now</button>
                     </form>
@@ -45,8 +56,7 @@
                     <div class="login__social__links">
                         <span>or</span>
                         <ul>
-                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With
-                            Facebook</a></li>
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> Sign in With Facebook</a></li>
                             <li><a href="#" class="google"><i class="fa fa-google"></i> Sign in With Google</a></li>
                             <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Sign in With Twitter</a>
                             </li>

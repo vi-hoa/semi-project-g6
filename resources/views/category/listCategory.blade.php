@@ -1,4 +1,4 @@
-@extends('admin.layout.index')
+@extends('category.layout.index')
 @section('title')
     Danh sách danh mục sản phẩm
 @endsection

@@ -1,10 +1,12 @@
+@extends('auth')
+@section('content')
 <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="normal__breadcrumb__text">
                     <h2>Login</h2>
-                    <p>Welcome to the official Anime blog.</p>
+                    <p>Welcome to the our Store</p>
                 </div>
             </div>
         </div>
@@ -21,12 +23,16 @@
                     <h3>Login</h3>
                     <form action="#">
                         <div class="input__item">
-                            <input type="text" placeholder="Email address">
+                            <input type="text" placeholder="Username">
+                            @if($errors->has('username'))
                             <span class="icon_mail"></span>
+                            @endif
                         </div>
                         <div class="input__item">
                             <input type="text" placeholder="Password">
+                            @if($errors->has('password'))
                             <span class="icon_lock"></span>
+                            @endif
                         </div>
                         <button type="submit" class="site-btn">Login Now</button>
                     </form>
@@ -59,3 +65,4 @@
     </div>
 </section>
 <!-- Login Section End -->
+@endsection
