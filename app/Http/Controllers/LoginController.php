@@ -8,7 +8,7 @@ class LoginController extends Controller
 {
     public function getLogin()
     {
-        return view('auth.login');
+        return view('login');
     }
     public function postLogin(Request $request)
     {
@@ -16,7 +16,7 @@ class LoginController extends Controller
 
         if(!Auth::validate($credentials)):
             return redirect()->to('login')
-                ->withErrors(trans('auth.failed'));
+                ->withErrors(trans(''));
         endif;
 
         $user = Auth::getProvider()->retrieveByCredentials($credentials);
