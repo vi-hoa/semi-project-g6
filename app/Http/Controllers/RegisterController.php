@@ -8,7 +8,7 @@ use DB;
 class RegisterController extends Controller
 {
     public function getRegister(){
-        return view ('auth.register');
+        return view ('signup');
     }
     public function postRegister(Request $request){
         $user = user::create($request->validated());

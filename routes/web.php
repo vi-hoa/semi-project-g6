@@ -44,10 +44,10 @@ Route::prefix('product')->group(function(){
 });
 Route::prefix('user')->group(function(){
 
-        Route::get('signup',[RegisterController::class,'getSignup'])->name('product.signup');
-        Route::post('signup',[RegisterController::class,'postSignup'])->name('product.signup');
-        Route::get('login',[LoginController::class,'getLogin'])->name('product.login');
-        Route::post('login',[LoginController::class,'postLogin'])->name('product.login');
+        Route::get('signup',[RegisterController::class,'getSignup'])->name('admin.product.getsignup');
+        Route::post('signup',[RegisterController::class,'postSignup'])->name('admin.product.postsignup');
+        Route::get('login',[LoginController::class,'getLogin'])->name('admin.product.getlogin');
+        Route::post('login',[LoginController::class,'postLogin'])->name('admin.product.postlogin');
 });
 Route::group(['middleware' => ['auth']],function(){
     Route::get('logout',[LogoutController::class,'Logout']);
