@@ -8,13 +8,10 @@ use DB;
 
 class UsersController extends Controller
 {
-    // public function index()
-    // {
-    // $categories=Category::all();
-    // // return view('admin.listCategory', ['categories' => $categories]);
-    // return view('admin.listCategory', compact("categories"));
-
-    // }
+    public function getAllUsers(){
+    $user=User::all();
+    return view('ListUser',compact('user'));
+    }
     public function index()
 
     {

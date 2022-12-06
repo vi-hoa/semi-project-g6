@@ -18,7 +18,7 @@
                       </p>
               </div>
               <div class="reg">
-                  <p class="mb-0"><a href="{{route('admin.product.signup')}}" class="mr-2">Sign Up</a> <a href="{{route('admin.product.login')}}">Log In</a></p>
+                  <p class="mb-0"><a href="{{('user/signup')}}" class="mr-2">Sign Up</a> <a href="{{'user/login'}}">Log In</a></p>
               </div>
                   </div>
               </div>
@@ -27,7 +27,7 @@
   
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.php">Liquor <span>store</span></a>
+        <a class="navbar-brand" href="{{('/product/index')}}">Games <span>store</span></a>
         <div class="order-lg-last btn-group">
         <a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="flaticon-shopping-bag"></span>
@@ -73,8 +73,8 @@
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="product.php">Products</a>
-              <a class="dropdown-item" href="product-single.php">Single Product</a>
+                <a class="dropdown-item" href="product.php">Games</a>
+              <a class="dropdown-item" href="product-single.php"></a>
               <a class="dropdown-item" href="cart.php">Cart</a>
               <a class="dropdown-item" href="checkout.php">Checkout</a>
             </div>

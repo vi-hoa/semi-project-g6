@@ -8,10 +8,9 @@ use DB;
 class RegisterController extends Controller
 {
     public function getRegister(){
-        return view ('signup');
+        return view ('product.signup');
     }
     public function postRegister(Request $request){
-        $user = user::create($request->validated());
         $user = new User();
         $user -> username = $request ->username;
         $user -> email = $request ->email;

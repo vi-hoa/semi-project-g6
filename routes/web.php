@@ -44,11 +44,9 @@ Route::prefix('product')->group(function(){
 });
 Route::prefix('user')->group(function(){
 
-        Route::get('signup',[RegisterController::class,'getSignup'])->name('admin.product.getsignup');
-        Route::post('signup',[RegisterController::class,'postSignup'])->name('admin.product.postsignup');
-        Route::get('login',[LoginController::class,'getLogin'])->name('admin.product.getlogin');
-        Route::post('login',[LoginController::class,'postLogin'])->name('admin.product.postlogin');
-});
-Route::group(['middleware' => ['auth']],function(){
-    Route::get('logout',[LogoutController::class,'Logout']);
+        Route::get('signup',[RegisterController::class,'getRegister']);
+        Route::post('signup',[RegisterController::class,'postRegister']);
+        Route::get('login',[LoginController::class,'getLogin']);
+        Route::post('login',[LoginController::class,'postLogin']);
+        Route::get('/',[UsersController::class,'getAllUsers'])->name('admin.product.listUser');
 });

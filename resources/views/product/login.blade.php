@@ -1,5 +1,4 @@
-@extends('auth')
-@section('content')
+
 <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
     <div class="container">
         <div class="row">
@@ -21,7 +20,7 @@
             <div class="col-lg-6">
                 <div class="login__form">
                     <h3>Login</h3>
-                    <form action="#">
+                    <form action="admin.product.login">
                         <div class="input__item">
                             <input type="text" placeholder="Username">
                             @if($errors->has('username'))
@@ -64,5 +63,3 @@
         </div>
     </div>
 </section>
-<!-- Login Section End -->
-@endsection
