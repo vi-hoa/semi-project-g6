@@ -23,10 +23,12 @@ class UsersController extends Controller
         // return view('admin.listCategory', ['categories' => $categories]);
         return view('admin.listUser', compact("users"));
     }
-    public function getCreate()
-    {
-        return view('admin.createUser');
-    }
+
+
+    // public function getCreate()
+    // {
+    //     return view('admin.createCategory');
+    // }
     //Hàm store để thêm dữ liệu
     public function postCreate(Request $request)
     {
@@ -34,8 +36,6 @@ class UsersController extends Controller
         $user ->username = $request->username;
         $user ->email = $request->email;
         $user ->password = $request->password;
-        $user ->role = $request->role;
-        $user->timestamps = false;
         $user ->save();
         return redirect()->route('admin.user.index');
     }
@@ -51,7 +51,6 @@ class UsersController extends Controller
         $user ->username = $request->username;
         $user ->email = $request->email;
         $user ->password = $request->password;
-        $user ->role = $request->role;
         $user ->save();
         return redirect()->route('admin.user.index');
     }
