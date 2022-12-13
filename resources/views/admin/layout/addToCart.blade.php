@@ -28,13 +28,7 @@
 
                         </div> 
 
-                    </div> 
 
-                </div> 
-
-            @endforeach 
-
-        </div><!-- End row --> 
 
     </div> 
 
