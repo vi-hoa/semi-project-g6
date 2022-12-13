@@ -1,12 +1,19 @@
+<<<<<<< HEAD
 @extends('auth')
 @section('content')
+=======
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
 <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="normal__breadcrumb__text">
                     <h2>Login</h2>
+<<<<<<< HEAD
                     <p>Welcome to the our Store</p>
+=======
+                    <p>Welcome to the official Anime blog.</p>
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
                 </div>
             </div>
         </div>
@@ -23,6 +30,7 @@
                     <h3>Login</h3>
                     <form action="#">
                         <div class="input__item">
+<<<<<<< HEAD
                             <input type="text" placeholder="Username">
                             @if($errors->has('username'))
                             <span class="icon_mail"></span>
@@ -33,6 +41,14 @@
                             @if($errors->has('password'))
                             <span class="icon_lock"></span>
                             @endif
+=======
+                            <input type="text" placeholder="Email address">
+                            <span class="icon_mail"></span>
+                        </div>
+                        <div class="input__item">
+                            <input type="text" placeholder="Password">
+                            <span class="icon_lock"></span>
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
                         </div>
                         <button type="submit" class="site-btn">Login Now</button>
                     </form>
@@ -64,5 +80,9 @@
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 <!-- Login Section End -->
 @endsection
+=======
+<!-- Login Section End -->
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65

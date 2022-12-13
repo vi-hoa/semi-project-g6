@@ -1,4 +1,8 @@
 <body>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
     <div class="wrap">
           <div class="container">
               <div class="row">
@@ -18,7 +22,11 @@
                       </p>
               </div>
               <div class="reg">
+<<<<<<< HEAD
                   <p class="mb-0"><a href="{{route('admin.product.signup')}}" class="mr-2">Sign Up</a> <a href="{{route('admin.product.login')}}">Log In</a></p>
+=======
+                  <p class="mb-0"><a href="#" class="mr-2">Sign Up</a> <a href="#">Log In</a></p>
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
               </div>
                   </div>
               </div>

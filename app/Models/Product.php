@@ -18,16 +18,4 @@ class Product extends Model
     protected $filable = [
         'product_name','product_price','img', 'product_description','category_id'
     ];
-
-    protected $primaryKey ="product_id";
-    
-    protected $table = "product";
-    
-    public function category(){
-        return $this ->belongsTo('App\Models\Category','category_id');
-    }
-    protected $fillable =[
-        'product_name','product_description','product_price','image','category_id'];
-    public $timestamps = false;
-
 }

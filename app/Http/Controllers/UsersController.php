@@ -23,6 +23,8 @@ class UsersController extends Controller
         // return view('admin.listCategory', ['categories' => $categories]);
         return view('admin.listUser', compact("users"));
     }
+
+
     // public function getCreate()
     // {
     //     return view('admin.createCategory');

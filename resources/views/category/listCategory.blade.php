@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @extends('category.layout.index')
+=======
+@extends('admin.layout.index')
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
 @section('title')
     Danh sách danh mục sản phẩm
 @endsection

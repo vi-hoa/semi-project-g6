@@ -4,11 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
-
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +54,9 @@ Route::group(['prefix' =>'category'], function(){
     Route::post('/product/update/{id}',[ProductController::class,'update'])->name('products.update');
     Route::get('/product/show/{id}',[ProductController::class,'show'])->name('products.show');
     Route::post('/product/store',[ProductController::class,'store'])->name('product.store');
+
+
+    Route::get('/home', [HomeController::class,'home'])->name('home');
+    Route::get('/game_single', [HomeController::class,'game_single'])->name('game_single');
+    Route::get('/games', [HomeController::class,'games'])->name('games');
+    Route::get('/review', [HomeController::class,'review'])->name('review');

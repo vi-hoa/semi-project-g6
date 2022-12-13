@@ -21,7 +21,7 @@ class CategoryController extends Controller
 
         $categories = Category::all();
         // return view('admin.listCategory', ['categories' => $categories]);
-        return view('category.listCategory', compact("categories"));
+        return view('admin.listCategory', compact("categories"));
     }
     public function getCreate()
     {

@@ -61,7 +61,11 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     {{-- <section class="ftco-section ftco-no-pb">
+=======
+    <section class="ftco-section ftco-no-pb">
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-4 ">
@@ -103,9 +107,13 @@
 
             </div>
         </div>
+<<<<<<< HEAD
     </section> --}}
 
     
+=======
+    </section>
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
 
     <section class="ftco-section">
         <div class="container">
@@ -267,7 +275,11 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4">
+<<<<<<< HEAD
                     <a href="product.php" class="btn btn-primary d-block">View All Products <span class="fa fa-long-arrow-right"></span></a>
+=======
+                    <a href="product.html" class="btn btn-primary d-block">View All Products <span class="fa fa-long-arrow-right"></span></a>
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
                 </div>
             </div>
         </div>
@@ -379,7 +391,11 @@
     <div class="row d-flex">
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
+<<<<<<< HEAD
               <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_1.jpg');">
+=======
+              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">
@@ -394,7 +410,11 @@
       </div>
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
+<<<<<<< HEAD
               <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_2.jpg');">
+=======
+              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">
@@ -409,7 +429,11 @@
       </div>
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
+<<<<<<< HEAD
               <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_3.jpg');">
+=======
+              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">
@@ -424,7 +448,11 @@
       </div>
       <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
           <div class="blog-entry d-flex">
+<<<<<<< HEAD
               <a href="blog-single.php" class="block-20 img" style="background-image: url('images/image_4.jpg');">
+=======
+              <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_4.jpg');">
+>>>>>>> 1ec6fcf1ab6b551e3ac6351a6f2fb6d59aa9ba65
           </a>
           <div class="text p-4 bg-light">
               <div class="meta">
