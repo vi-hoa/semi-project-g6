@@ -76,26 +76,37 @@
 	<!-- Header section end -->
 
 
-	<!-- Hero section -->
+	
 	<section class="hero-section overflow-hidden">
 		<div class="hero-slider owl-carousel">
+
+			@foreach ($slide as $sl)
+				
 			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="./user/img/slider-bg-1.jpg" >
 				<div class="container">
-					<h2>Game on!</h2>
-					<p>Fusce erat dui, venenatis et erat in, vulputate dignissim lacus. Donec vitae tempus dolor,<br>sit amet elementum lorem. Ut cursus tempor turpis.</p>
-					<a href="#" class="site-btn">Read More  <img src="./user/img/icons/double-arrow.png" alt="#"/></a>
+					
+						<div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
+							<div class="carousel-inner">
+							  <div class="carousel-item active">
+								<img class="d-block w-100" style="width:100% ; height:550px; padding-bottom:30px" src="./user/img/semi1.jpg" alt="">
+							  </div>
+							  <div class="carousel-item">
+								<img class="d-block w-100" style="width:100% ; height:550px; padding-bottom:30px" src="./user/img/semi2.jpg" alt="">
+							  </div>
+							  <div class="carousel-item">
+								<img class="d-block w-100" style="width:100% ; height:550px; padding-bottom:30px" src="./user/img/semi3.jpg" alt="">
+							  </div>
+							</div>
+							
+						  </div>
+					
+					<a href="#" class="site-btn">Read More   <img src="./user/img/icons/double-arrow.png" alt="#"/></a>
 				</div>
 			</div>
-			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="user/img/slider-bg-2.jpg">
-				<div class="container">
-					<h2>Game on!</h2>
-					<p>Fusce erat dui, venenatis et erat in, vulputate dignissim lacus. Donec vitae tempus dolor,<br>sit amet elementum lorem. Ut cursus tempor turpis.</p>
-					<a href="#" class="site-btn">Read More  <img src="./user/img/icons/double-arrow.png" alt="#"/></a>
-				</div>
-			</div>
+				@endforeach
 		</div>
 	</section>
-	<!-- Hero section end-->
+	
 
 
 	<!-- Intro section -->
