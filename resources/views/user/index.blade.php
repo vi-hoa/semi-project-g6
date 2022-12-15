@@ -76,7 +76,6 @@
 	<!-- Header section end -->
 
 
-	
 	<section class="hero-section overflow-hidden">
 		<div class="hero-slider owl-carousel">
 
@@ -85,6 +84,8 @@
 			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center" data-setbg="./user/img/slider-bg-1.jpg" >
 				<div class="container">
 					
+                <!-- carousel -->
+
 						<div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
 							<div class="carousel-inner">
 							  <div class="carousel-item active">
