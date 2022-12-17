@@ -18,3 +18,4 @@ class Slider extends Model
     ];
     use HasFactory;
 }
+// model cua luong quy hung
